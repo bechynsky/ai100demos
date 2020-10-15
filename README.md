@@ -1,2 +1,2 @@
-# ai100demos
-Demos fro AI-10X training
+# AI-10X demos
+Demos for AI-10X training and certification.
