@@ -1,0 +1,1 @@
+curl -H "Ocp-Apim-Subscription-Key: " + $Env:CV_KEY -H "Content-Type: application/json" $Env:CV_ENDPOINT + "vision/v3.0/analyze?visualFeatures=Categories,Description&details=Landmarks" -d "{\"url\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Acropoclipse.jpg/750px-Acropoclipse.jpg\"}"
