@@ -12,7 +12,15 @@ Demos for [AI-10X](https://docs.microsoft.com/en-us/learn/certifications/exams/a
 - Clone this repository.
   - ```git clone https://github.com/bechynsky/ai100demos.git```
 - Install Python libraries.
+- Goto ```ai100demos``` folder.
+- Run ```code .``` to open code editor to see code.
 - Run [new_cognitiveservices.ps1](new_cognitiveservices.ps1).
   - All information like endpoint and service key is stored in Environment variables. 
+  - Check environment variables we create ```printenv | grep CV_```.
   - It is not persistent and information is lost after Azure Cloud Shell restarts.
   - Copy output of script for future reference.
+
+
+# Cleanup
+- Run ```cleanup.ps1``` to delete resources in Azure
+- Delete ```ai100demos``` folder 
