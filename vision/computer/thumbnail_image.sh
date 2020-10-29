@@ -1,1 +1,2 @@
-curl -H "Ocp-Apim-Subscription-Key: " + $Env:CV_KEY -H "Content-Type: application/json" $Env:CV_ENDPOINT + "vision/v3.0/generateThumbnail?width=100&height=100&smartCropping=true" -d "{\"url\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shorkie_Poo_Puppy.jpg/1280px-Shorkie_Poo_Puppy.jpg\"}"
+#!/bin/bash
+curl -H "Ocp-Apim-Subscription-Key: ${CV_KEY}" -H "Content-Type: application/json" "${CV_ENDPOINT}vision/v3.0/generateThumbnail?width=100&height=100&smartCropping=true" -d "{\"url\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/5/56/Shorkie_Poo_Puppy.jpg/1280px-Shorkie_Poo_Puppy.jpg\"}"
