@@ -7,7 +7,11 @@ Demos for [AI-10X](https://docs.microsoft.com/en-us/learn/certifications/exams/a
 - Become familiar with [Environment Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7).
 
 # Limitation
-- Python code using Speech doesn't work in Azure Cloud Shell. You need to run code localy.
+Python code using Speech, microphone and speaker doesn't work in Azure Cloud Shell. You need to run code localy. All Azure Cloud Shell unsoported demos are in ```speech_translator/local_pc_folder``` folder. 
+
+# Speech
+
+Demos using speech needs audio files. Some sample audio files are included. Information about [supported audio format](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#audio-formats).
 
 # How to use
 
