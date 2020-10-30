@@ -12,7 +12,7 @@ def translate_speech_to_speech():
     # Replace with your own subscription key and region identifier from here: https://aka.ms/speech/sdkregion
     translation_config = speechsdk.translation.SpeechTranslationConfig(subscription=subscription_key, region=service_region)
 
-    speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
+    speech_config = speechsdk.SpeechConfig(subscription=subscription_key, region=service_region)
 
     # Sets the synthesis output voice name.
     # Replace with the languages of your choice, from list found here: https://aka.ms/speech/tts-languages
