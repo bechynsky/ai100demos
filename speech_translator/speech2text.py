@@ -1,3 +1,5 @@
+# WARNING - doesn't work in Azure Cloud Shell. Run it on local computer.
+
 import os
 import azure.cognitiveservices.speech as speechsdk
 
