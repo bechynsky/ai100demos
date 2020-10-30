@@ -15,6 +15,7 @@ Demos for [AI-10X](https://docs.microsoft.com/en-us/learn/certifications/exams/a
 - Clone this repository.
   - ```git clone https://github.com/bechynsky/ai100demos.git```
 - Install Python libraries.
+  - ```pip install azure-cognitiveservices-speech```
 - Goto ```ai100demos``` folder.
 - Run ```code .``` to open code editor to see code.
 - Run [new_cognitiveservices.ps1](new_cognitiveservices.ps1).
