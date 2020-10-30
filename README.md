@@ -6,6 +6,9 @@ Demos for [AI-10X](https://docs.microsoft.com/en-us/learn/certifications/exams/a
 - Become familiar with [Az.CognitiveServices](https://docs.microsoft.com/en-us/powershell/module/az.cognitiveservices/?view=azps-5.0.0#cognitive-services) PowerShell module.
 - Become familiar with [Environment Variables](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7).
 
+# Limitation
+- Python code using Speech doesn't work in Azure Cloud Shell. You need to run code localy.
+
 # How to use
 
 - Login to [Azure Cloud Shell](https://shell.azure.com).
