@@ -1,13 +1,9 @@
-# WARNING - doesn't work in Azure Cloud Shell. Run it on local computer.
-
 import os
 import azure.cognitiveservices.speech as speechsdk
 
 subscription_key = os.environ.get("CV_KEY")
 service_region = os.environ.get("CV_LOCATION")
 
-# Creates an instance of a speech translation config with specified subscription key and service region.
-# Replace with your own subscription key and region identifier from here: https://aka.ms/speech/sdkregion
 translation_config = speechsdk.translation.SpeechTranslationConfig(subscription=subscription_key, region=service_region)
 
 # Sets source and target languages.
