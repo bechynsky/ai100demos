@@ -10,14 +10,7 @@ New-AzResourceGroup -Name $rg_name -Location $location
 #   AzCognitiveServicesAccountType
 $cs = New-AzCognitiveServicesAccount -Name $cs_name -ResourceGroupName $rg_name -Location $location -SkuName S0 -Type CognitiveServices -Force
 
-"Environment variables:"
-"CV_RESOURCE_GROUP: " + $rg_name
-"CV_ENDPOINT: " + $cs.Endpoint
-"CV_LOCATION: " + $cs.Location
-
 $keys = Get-AzCognitiveServicesAccountKey -Name $cs_name -ResourceGroupName $rg_name
-
-"CV_KEY: " + $keys.Key1
 
 # Put inforamation to temporary environment variable
 # This information is lost after session is closed
@@ -25,3 +18,6 @@ $Env:CV_ENDPOINT = $cs.Endpoint
 $Env:CV_KEY = $keys.Key1
 $Env:CV_RESOURCE_GROUP = $rg_name
 $Env:CV_LOCATION = $cs.Location
+
+# Print demo related environment variables
+Get-ChildItem env:* | Where-Object {$_.Name -like 'CV_*'} | Select-Object -Property Name, Value | Format-Table
