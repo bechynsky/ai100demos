@@ -13,9 +13,9 @@ analyze_url = endpoint + "vision/v3.0/analyze"
 # Set image_path to the local path of an image that you want to analyze.
 # Sample images are here, if needed:
 # https://github.com/Azure-Samples/cognitive-services-sample-data-files/tree/master/ComputerVision/Images
-# image_path = "c:/Users/stbechyn/Documents/AI-100-Design-Implement-Azure-AISol/Lab2-Implement_Computer_Vision/sample_images/Analysis_9.jpg"
-# image_path = "C:/Users/stbechyn/Pictures/20201008_133255.jpg"
-image_path = "C:/Users/stbechyn/Pictures/20201016_085235.jpg"
+
+# Put local path to your image
+image_path = ""
 
 # Read the image into a byte array
 image_data = open(image_path, "rb").read()
