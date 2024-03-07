@@ -5,6 +5,10 @@ import json
 from io import BytesIO
 from pprint import pprint
 
+from dotenv import load_dotenv
+
+load_dotenv()
+
 subscription_key = os.environ.get('CV_KEY')
 endpoint = os.environ.get("CV_ENDPOINT")
 

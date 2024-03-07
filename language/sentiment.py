@@ -11,7 +11,7 @@ subscription_key = os.environ.get("CV_KEY")
 endpoint = os.environ.get("CV_ENDPOINT")
 
 
-language_api_url = endpoint + "text/analytics/v3.0/sentiment"
+language_api_url = endpoint + "text/analytics/v3.1/sentiment"
 
 documents = {
   "documents": [

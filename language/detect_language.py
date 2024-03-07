@@ -11,7 +11,7 @@ subscription_key = os.environ.get("CV_KEY")
 endpoint = os.environ.get("CV_ENDPOINT")
 
 
-language_api_url = endpoint + "text/analytics/v3.0/languages"
+language_api_url = endpoint + "text/analytics/v3.1/languages"
 
 documents = {"documents": [
     {"id": "1", "text": "This is a document written in English."},
