@@ -8,6 +8,15 @@ Demos for [AI-10X](https://docs.microsoft.com/en-us/learn/certifications/exams/a
 - Become familiar with [Cognitive Services REST API](https://westeurope.dev.cognitive.microsoft.com/docs/services).
 - Read comments in code.
 
+## Where to put endpoint and key
+
+Service endpoint and key you need to add to [environment variable](https://en.wikipedia.org/wiki/Environment_variable). Another option is to create [_.env_ file](https://pypi.org/project/python-dotenv/) and add it to this file. Example of _.env_ file:
+
+```
+CV_ENDPOINT="https://xxxxxxxxxxxxx.cognitiveservices.azure.com/"
+CV_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+```
+
 ## Speech
 
 Demos using speech needs audio files. Some sample audio files are included. Information about [supported audio format](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/rest-speech-to-text#audio-formats).
