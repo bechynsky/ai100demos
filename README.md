@@ -15,6 +15,7 @@ Service endpoint and key you need to add to [environment variable](https://en.wi
 ```
 CV_ENDPOINT="https://xxxxxxxxxxxxx.cognitiveservices.azure.com/"
 CV_KEY="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+CV_LOCATION="xxxxxxxx"
 ```
 
 ## Speech
