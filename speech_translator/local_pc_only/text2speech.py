@@ -2,9 +2,13 @@
 
 import os
 import azure.cognitiveservices.speech as speechsdk
+from dotenv import load_dotenv
+
+load_dotenv()
 
 subscription_key = os.environ.get("CV_KEY")
 service_region = os.environ.get("CV_LOCATION")
+
 
 speech_config = speechsdk.SpeechConfig(subscription=subscription_key, region=service_region)
 

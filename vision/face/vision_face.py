@@ -1,5 +1,8 @@
 import json, os, requests
 from pprint import pprint
+from dotenv import load_dotenv
+
+load_dotenv()
 
 subscription_key = os.environ.get('CV_KEY')
 endpoint = os.environ.get("CV_ENDPOINT")
@@ -12,7 +15,8 @@ headers = {'Ocp-Apim-Subscription-Key': subscription_key}
 
 params = {
 	'detectionModel': 'detection_01',
-	'returnFaceAttributes': 'age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise',
+	'returnFaceAttributes': 'glasses',
+#	'returnFaceAttributes': 'age,gender,headPose,smile,facialHair,glasses,emotion,hair,makeup,occlusion,accessories,blur,exposure,noise',
     'returnFaceId': 'true'
 }
 

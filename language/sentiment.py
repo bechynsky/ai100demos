@@ -3,6 +3,9 @@ import requests
 
 # pprint is used to format the JSON response
 from pprint import pprint
+from dotenv import load_dotenv
+
+load_dotenv()
 
 subscription_key = os.environ.get("CV_KEY")
 endpoint = os.environ.get("CV_ENDPOINT")
