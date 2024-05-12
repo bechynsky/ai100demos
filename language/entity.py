@@ -56,5 +56,5 @@ def entity_linking_example(client):
 client = authenticate_client()
 
 # https://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking?tabs=version-3-preview
-entity_recognition_example(client)
+#entity_recognition_example(client)
 entity_linking_example(client)
