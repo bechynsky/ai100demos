@@ -1,5 +1,5 @@
 from azure.ai.textanalytics import TextAnalyticsClient
-from azure.core.credentials import AzureKeyCredential
+from azure.identity import DefaultAzureCredential
 
 import os
 from dotenv import load_dotenv
@@ -10,10 +10,9 @@ subscription_key = os.environ.get("CV_KEY")
 endpoint = os.environ.get("CV_ENDPOINT")
 
 def authenticate_client():
-    ta_credential = AzureKeyCredential(subscription_key)
     text_analytics_client = TextAnalyticsClient(
             endpoint = endpoint, 
-            credential = ta_credential)
+            credential = DefaultAzureCredential())
     return text_analytics_client
 
 def entity_recognition_example(client):
