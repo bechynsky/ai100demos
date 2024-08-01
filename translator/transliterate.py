@@ -2,6 +2,7 @@ import os
 
 from azure.ai.translation.text import *
 from azure.ai.translation.text.models import InputTextItem
+from azure.core.credentials import AzureKeyCredential
 
 from dotenv import load_dotenv
 
@@ -11,11 +12,13 @@ key = os.environ.get("KEY")
 endpoint = os.environ.get("ENDPOINT")
 location = os.environ.get("LOCATION")
 
-content = [InputTextItem(text="こんにちは")]
+content = ["こんにちは"]
 
-credential = TranslatorCredential(key, location)
+credential = AzureKeyCredential(key)
 
-client = TextTranslationClient(endpoint=endpoint, credential=credential)
-result = client.transliterate(content=content, language="ja", from_script="Jpan", to_script="Latn")
+client = TextTranslationClient(region=location, credential=credential)
+
+
+result = client.transliterate(body=content, language="ja", from_script="Jpan", to_script="Latn")
 print(result)
 
