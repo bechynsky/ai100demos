@@ -19,11 +19,11 @@ analyze_url = endpoint + "/computervision/imageanalysis:analyze?api-version=2024
 # Sample images are here, if needed:
 # https://github.com/Azure-Samples/cognitive-services-sample-data-files/tree/master/ComputerVision/Images
 
-# Put local path to your image
-image_path = "C:\\Users\\stbechyn\\OneDrive - Microsoft\\Pictures\\20201104_191947.jpg"
+sample_file_path = os.environ.get("SAMPLE_FILE")
+
 
 # Read the image into a byte array
-image_data = open(image_path, "rb").read()
+image_data = open(sample_file_path, "rb").read()
 headers = {'Ocp-Apim-Subscription-Key': subscription_key,
            'Content-Type': 'application/octet-stream'}
 
